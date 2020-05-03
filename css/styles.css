@@ -1,48 +1,48 @@
 body {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
 h1 {
   color: #66bfbf;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 5em;
   margin: 50px auto 0 auto;
 }
 
 h2 {
   color: #66bfbf;
-  font-family: 'Slabo 27px', sans-serif;
+  font-family: "Slabo 27px", sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
 }
 
 h3 {
-  color: #11999E;
-  font-family: 'Slabo 27px', sans-serif;
+  color: #11999e;
+  font-family: "Slabo 27px", sans-serif;
   font-size: 1.5em;
 }
 
 p {
-  color: #40514E;
+  color: #40514e;
   line-height: 2;
 }
 
 a {
-   color: #11999E;
-   font-family: 'Slabo 27px', sans-serif;
-   text-decoration: none;
+  color: #11999e;
+  font-family: "Slabo 27px", sans-serif;
+  text-decoration: none;
 }
 
 a:hover {
   color: #eaf6f6;
 }
 
-.icon-credits {
-  color: #11999E;
+.credits {
+  color: #11999e;
   font-size: 0.75rem;
-  font-family: 'Slabo 27px', sans-serif;
+  font-family: "Slabo 27px", sans-serif;
 }
 /* hr {
   border-color: #EAF6F6;
@@ -53,14 +53,14 @@ a:hover {
 } */
 
 hr {
-  border: dotted #EAF6F6 6px;
+  border: dotted #eaf6f6 6px;
   border-bottom: none;
   width: 5%;
   margin: 100px auto;
 }
 
 .top-container {
-  background-color: #eaf6f6;
+  background-color: #bceefe;
   padding-top: 100px;
   position: relative;
 }
@@ -71,7 +71,7 @@ hr {
 
 .bottom-container {
   background: #66bfbf;
-  color: #11999E;
+  color: #11999e;
   padding: 50px 0 20px;
 }
 
@@ -84,11 +84,27 @@ hr {
   text-decoration: underline;
 }
 
+#myname {
+  font-family: "Comic Neue", Arial, Helvetica, sans-serif;
+}
+
+#mytitle {
+  margin: 0 auto;
+}
+
+p a {
+  font-family: "Open Sans", sans-serif;
+}
+p a:hover {
+  color: #66bfbf;
+}
+
 .top-cloud {
   position: absolute;
   height: 20%;
   right: 20%;
   top: 40px;
+  opacity: 80%;
 }
 
 .bottom-cloud {
@@ -96,6 +112,7 @@ hr {
   left: 20%;
   height: 25%;
   position: absolute;
+  opacity: 40%;
 }
 
 .trees {
@@ -145,7 +162,7 @@ hr {
 }
 
 .copyright {
-  color: #EAF6F6;
+  color: #eaf6f6;
   font-size: 0.75rem;
   padding: 20px 0 10px;
 }
@@ -160,7 +177,7 @@ hr {
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
