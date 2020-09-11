@@ -80,6 +80,7 @@ hr {
   width: 30%;
   margin: auto;
   z-index: 2;
+  text-align: justify;
 }
 
 .pro {
@@ -204,6 +205,7 @@ p a:hover {
 .contact-message {
   width: 40%;
   margin: 40px auto 60px;
+  text-align: justify;
 }
 
 @keyframes clouds-glide {
