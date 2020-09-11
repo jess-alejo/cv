@@ -139,6 +139,10 @@ p a:hover {
   text-align: left;
 }
 
+.skill-row p {
+  text-align: justify;
+}
+
 .web-image {
   width: 25%;
   float: right;
