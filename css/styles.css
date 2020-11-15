@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --primary-color: #086788;      /* Blue Sapphire */
+  --info-color: #07A0C3;         /* Blue Green    */
+  --alert-color: #F0C808;        /* Jonquil       */
+  --danger-color: #DD1C1A;       /* Maximum Red   */
+  --background-color: #FFF1D0;   /* Papaya Whip   */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +24,7 @@ body {
   flex: 0 50%;
   padding: 100px;
   background-color: #fff1d022;
+  margin: auto
 }
 
 #hero * {
