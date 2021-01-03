@@ -1,0 +1,94 @@
+:root {
+  --bg-profile-primary: #277da1;
+  --bg-profile-success: #43aa8b;
+  --bg-profile-warning: #f3722c;
+  --bg-profile-danger: #f94144;
+  --bg-profile-dark: #264653;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#main-header img {
+  width: 100%;
+  height: 100%;
+  transform: blur;
+}
+
+#main-header .port-item {
+  width: 30%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.bg-black {
+  color: #fff;
+  background: #000;
+}
+
+/* .bg-profile-image {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-image: url("../img/image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.bg-profile-dark {
+  background-color: var(--bg-profile-dark);
+}
+
+.bg-profile-primary {
+  background-color: var(--bg-profile-primary);
+  border-radius: 0;
+}
+
+.bg-profile-success {
+  background-color: var(--bg-profile-success);
+}
+
+.bg-profile-warning {
+  background-color: var(--bg-profile-warning);
+}
+
+.bg-profile-danger {
+  background-color: var(--bg-profile-danger);
+}
+
+.card.skill {
+  min-height: 340px;
+}
+.card img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.skill-level {
+  height: 10px;
+}
+
+.skill-novice {
+  width: 40%;
+  background-color: var(--bg-profile-success);
+}
+
+.skill-label {
+  font-size: 0.75rem;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 4.2em !important;
+  }
+}
