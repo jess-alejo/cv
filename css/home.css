@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5rem;
+  font-family: 'Happy Monkey', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.75;
+  color: #00271c;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -58,7 +66,7 @@ nav {
 }
 
 .glass {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 main {
