@@ -1,94 +1,259 @@
 :root {
-  --bg-profile-primary: #277da1;
-  --bg-profile-success: #43aa8b;
-  --bg-profile-warning: #f3722c;
-  --bg-profile-danger: #f94144;
-  --bg-profile-dark: #264653;
+  --color-red-light: #f17171;
+  --color-red: #ee4d4d;
+  --color-red-dark: #d64545;
+
+  --color-orange-light: #ffa071;
+  --color-orange: #ff884d;
+  --color-orange-dark: #e57a45;
+
+  --color-yellow-light: #ffd071;
+  --color-yellow: #ffc44d;
+  --color-yellow-dark: #e5b045;
+
+  --color-green-light: #a2d471;
+  --color-green: #8bc94d;
+  --color-green-dark: #7db545;
+
+  --color-teal-light: #71e2d0;
+  --color-teal: #4ddbc4;
+  --color-teal-dark: #45c5b0;
+
+  --color-cyan-light: #71d0ff;
+  --color-cyan: #4dc4ff;
+  --color-cyan-dark: #45b0e5;
+
+  --color-blue-light: #7ea9ff;
+  --color-blue: #5394ff;
+  --color-blue-dark: #5485e5;
+
+  --color-purple-light: #b38dff;
+  --color-purple: #a071ff;
+  --color-purple-dark: #9065e5;
+
+  --color-pink-light: #ff71b7;
+  --color-pink: #ff4da5;
+  --color-pink-dark: #e54594;
+
+  --color-gray-light: #a2adb9;
+  --color-gray: #8b98a6;
+  --color-gray-dark: #7d8995;
+
+  --color-backround: #ecf0f3;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #222;
+  background: var(--color-backround);
 }
 
-#main-header .port-item {
-  width: 30%;
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
 }
 
-#main-header .port-item:hover {
-  opacity: 0.8;
-  cursor: pointer;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.bg-black {
-  color: #fff;
-  background: #000;
-}
-
-/* .bg-profile-image {
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-  background-image: url("../img/image.webp");
-  background-position: center;
+/* Hero */
+.hero {
+  background: linear-gradient(120deg, #9065e5dd -10%, #5485e5dd 110%),
+    url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80);
+  height: 95vh;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 
-.bg-profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bg-profile-dark {
-  background-color: var(--bg-profile-dark);
+/* Profile Image */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
 }
 
-.bg-profile-primary {
-  background-color: var(--bg-profile-primary);
-  border-radius: 0;
+.profile__image {
+  background: url(../images/profile.png);
+  /* background: url(../../img/profile.png); */
+  background-position: center;
+  background-size: cover;
+  border-radius: 150px;
+  height: 160px;
+  width: 160px;
+  opacity: 0.9;
+  border: 8px solid var(--color-purple-light);
 }
 
-.bg-profile-success {
-  background-color: var(--bg-profile-success);
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
-.bg-profile-warning {
-  background-color: var(--bg-profile-warning);
+.profile__heading {
+  font-size: 5.2rem;
+  letter-spacing: 0.5rem;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  margin: 4rem 0 1.5rem;
 }
 
-.bg-profile-danger {
-  background-color: var(--bg-profile-danger);
+.profile__subheading {
+  letter-spacing: 0.4rem;
+  padding-left: 0.3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.6;
 }
 
-.card.skill {
-  min-height: 340px;
-}
-.card img {
-  max-height: 100px;
-  max-width: 100%;
+.text--white {
+  color: #fff;
 }
 
-.skill-level {
-  height: 10px;
+@media screen and (min-width: 768px) {
+  .hero {
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+
+  .profile__heading {
+    font-size: 6rem;
+    letter-spacing: 1rem;
+  }
+
+  .profile__subheading {
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+  }
 }
 
-.skill-novice {
-  width: 40%;
-  background-color: var(--bg-profile-success);
+/* Social Media */
+
+.social-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  transform: translateY(-10rem);
+  background: var(--color-backround);
+  padding: 3rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: 100px;
+  margin: 0 2rem;
 }
 
-.skill-label {
-  font-size: 0.75rem;
+.social-media__list-item {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  font-size: 3rem;
+  border: 2px solid #e9deff;
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px #b09cd944, -5px -5px 5px #fff;
 }
 
-hr {
-  opacity: 0.1;
+.social-media__list-item a {
+  color: var(--color-purple-light);
+  transition: color ease-out 0.15s;
 }
 
-@media (min-width: 1199px) {
-  .port-item {
-    padding: 4.2em !important;
+.github:hover {
+  color: #333;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Feature */
+.block {
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+}
+
+.block__heading {
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.icon-container {
+  height: 64px;
+  width: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #e9deff;
+  border-radius: 100%;
+}
+
+.icon-container img {
+  height: 70%;
+}
+
+.feature {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
