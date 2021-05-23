@@ -53,13 +53,11 @@ html {
 }
 
 body {
-  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  margin: 0;
-  padding: 0;
+  line-height: 1.5;
   color: #222;
-  background: #fff;
-  height: 300vh;
+  background: var(--color-backround);
 }
 
 h1,
@@ -162,7 +160,7 @@ h3 {
   list-style: none;
   text-align: center;
   transform: translateY(-10rem);
-  background: #fff;
+  background: var(--color-backround);
   padding: 3rem;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -171,7 +169,17 @@ h3 {
 }
 
 .social-media__list-item {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
   font-size: 3rem;
+  border: 2px solid #e9deff;
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px #b09cd944, -5px -5px 5px #fff;
 }
 
 .social-media__list-item a {
