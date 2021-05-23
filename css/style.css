@@ -249,11 +249,22 @@ h3 {
 }
 
 .feature {
-  margin-top: 2rem;
+  margin: 2rem 0 4rem;
 }
 
 @media screen and (min-width: 768px) {
   .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.tool-logo {
+  display: flex;
+  align-items: center ;
+  justify-content: start;
+  height: 8rem;
+}
+
+.tool-logo img {
+  height: 100%;
 }
