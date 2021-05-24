@@ -265,3 +265,7 @@ h3 {
 .tool-logo img {
   height: 100%;
 }
+
+.card-title {
+  margin-bottom: 0;
+}
