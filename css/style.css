@@ -120,19 +120,19 @@ h3 {
 }
 
 .profile__heading {
+  margin: 4rem 0 0.5rem;
   font-size: 5.2rem;
-  letter-spacing: 0.5rem;
-  padding-left: 1rem;
   text-transform: uppercase;
-  margin: 4rem 0 1.5rem;
+  letter-spacing: 0.6rem;
+  text-indent: 1.2rem;
 }
 
 .profile__subheading {
-  letter-spacing: 0.4rem;
-  padding-left: 0.3rem;
+  margin: 0;
   font-size: 2.2rem;
   text-transform: uppercase;
-  margin: 0;
+  letter-spacing: 0.77rem;
+  text-indent: 0.77rem;
   opacity: 0.6;
 }
 
@@ -147,12 +147,10 @@ h3 {
 
   .profile__heading {
     font-size: 6rem;
-    letter-spacing: 1rem;
   }
 
   .profile__subheading {
     font-size: 2.5rem;
-    letter-spacing: 0.7rem;
   }
 }
 
@@ -260,7 +258,7 @@ h3 {
 
 .tool-logo {
   display: flex;
-  align-items: center ;
+  align-items: center;
   justify-content: start;
   height: 8rem;
 }
