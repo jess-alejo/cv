@@ -101,8 +101,7 @@ h3 {
 }
 
 .profile__image {
-  background: url(../images/profile.png);
-  /* background: url(../../img/profile.png); */
+  background: url(/images/profile.png);
   background-position: center;
   background-size: cover;
   border-radius: 150px;
