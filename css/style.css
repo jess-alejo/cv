@@ -124,6 +124,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   text-indent: 1.2rem;
+  animation: fadeRight 1s ease-out;
 }
 
 .profile__subheading {
@@ -133,6 +134,7 @@ h3 {
   letter-spacing: 0.77rem;
   text-indent: 0.77rem;
   opacity: 0.6;
+  animation: fadeLeft 1s ease-out;
 }
 
 .text--white {
@@ -189,19 +191,35 @@ h3 {
   transition: color ease-out 0.15s;
 }
 
-.github:hover {
+.github {
+  animation: zoomIn 0.6s backwards 0.2s;
+}
+
+.github a:hover {
   color: #333;
 }
 
-.twitter:hover {
+.twitter {
+  animation: zoomIn 0.6s backwards 0.4s;
+}
+
+.twitter a:hover {
   color: #1da1f2;
 }
 
-.facebook:hover {
+.facebook {
+  animation: zoomIn 0.6s backwards 0.6s;
+}
+
+.facebook a:hover {
   color: #4267b2;
 }
 
-.linkedin:hover {
+.linkedin {
+  animation: zoomIn 0.6s backwards 0.8s;
+}
+
+.linkedin a:hover {
   color: #0077b5;
 }
 
@@ -216,6 +234,10 @@ h3 {
 .block {
   letter-spacing: 0.1rem;
   padding: 2rem;
+}
+
+.block__header {
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -268,4 +290,35 @@ h3 {
 
 .card-title {
   margin-bottom: 0;
+}
+
+/* Animations */
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
 }

@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -30,34 +31,25 @@
     </section>
     <div class="social">
       <ul class="social-media">
-        <li class="social-media__list-item">
-          <a
-            href="https://github.com/jess-alejo"
-            target="_blank"
-            class="github"
-          >
+        <li class="social-media__list-item github">
+          <a href="https://github.com/jess-alejo" target="_blank">
             <i class="fab fa-github"></i>
           </a>
         </li>
-        <li class="social-media__list-item">
-          <a href="https://twitter.com/JEAlejo" target="_blank" class="twitter">
+        <li class="social-media__list-item twitter">
+          <a href="https://twitter.com/JEAlejo" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
         </li>
-        <li class="social-media__list-item">
-          <a
-            href="https://www.facebook.com/jess.alejo"
-            target="_blank"
-            class="facebook"
-          >
+        <li class="social-media__list-item facebook">
+          <a href="https://www.facebook.com/jess.alejo" target="_blank">
             <i class="fab fa-facebook"></i>
           </a>
         </li>
-        <li class="social-media__list-item">
+        <li class="social-media__list-item linkedin">
           <a
             href="https://www.linkedin.com/in/jess-alejo-95704386/"
             target="_blank"
-            class="linkedin"
           >
             <i class="fab fa-linkedin"></i>
           </a>
@@ -65,7 +57,7 @@
       </ul>
     </div>
     <section class="block container">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2 class="block__heading">Programming Toolbelt</h2>
         <p>
           Whatever our profession is, we need tools to facilitate our work and
@@ -73,169 +65,178 @@
           and make us comfortable.
         </p>
       </header>
-      <div class="feature grid grid-cols-3">
-        <!-- HTML -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/html.png" alt="HTML" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">HTML 5</h3>
-              <p class="card-text">
-                HTML is one of the languages of the web. Many applications are
-                now moving online, and HTML is a necessary tool to have.
-              </p>
-            </div>
-            <div class="card-footer skill-level--advanced"></div>
-          </div>
-        </div>
 
-        <!-- CSS 3 -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/css.png" alt="CSS" />
+      <article data-aos="fade-up">
+        <h3>Desktop</h3>
+        <div class="feature grid grid-cols-3">
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/csharp.png" alt="C#" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">C#</h3>
+                <p class="card-text">
+                  C# is my favorite programming language. I successfully built
+                  an Accounting System in 2014, which solved most of the
+                  problems the company had.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title">CSS 3</h3>
-              <p class="card-text">
-                CSS makes the web UI beautiful and unique. It's a great tool to
-                have an engaging website and express artistry.
-              </p>
+          </div>
+          <!-- WPF -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/wpf.png" alt="WPF" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">WPF</h3>
+                <p class="card-text">
+                  My passion coding in C# introduces me to Windows Presentation
+                  Foundation which helps me create wonderful user interfaces in
+                  Windows-based applications.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
             </div>
-            <div class="card-footer skill-level--advanced"></div>
+          </div>
+          <!-- MySQL -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/mysql.png" alt="MySQL" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">MySQL</h3>
+                <p class="card-text">
+                  MySQL is my prepared database when creating desktop
+                  applications. I find it easy to use and learn, and resources
+                  are easily accessible.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
+            </div>
           </div>
         </div>
+      </article>
 
-        <!-- JavaScript -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/javascript.png" alt="JavaScript" />
+      <article data-aos="fade-up">
+        <h3>Front-end</h3>
+        <div class="feature grid grid-cols-3">
+          <!-- HTML -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/html.png" alt="HTML" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">HTML 5</h3>
+                <p class="card-text">
+                  HTML is one of the languages of the web. Many applications are
+                  now moving online, and HTML is a necessary tool to have.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title">JavaScript</h3>
-              <p class="card-text">
-                JavaScript is a programming language now used in both
-                client-side and server-side. It makes the web interactive and
-                dynamic.
-              </p>
+          </div>
+          <!-- CSS 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/css.png" alt="CSS" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">CSS 3</h3>
+                <p class="card-text">
+                  CSS makes the web UI beautiful and unique. It's a great tool
+                  to have an engaging website and express artistry.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
             </div>
-            <div class="card-footer skill-level--intermediate"></div>
+          </div>
+          <!-- JavaScript -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/javascript.png" alt="JavaScript" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">JavaScript</h3>
+                <p class="card-text">
+                  JavaScript is a programming language now used in both
+                  client-side and server-side. It makes the web interactive and
+                  dynamic.
+                </p>
+              </div>
+              <div class="card-footer skill-level--intermediate"></div>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="feature grid grid-cols-3">
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/csharp.png" alt="C#" />
+      <article data-aos="fade-up">
+        <h3>Back-end</h3>
+        <div class="feature grid grid-cols-3">
+          <!-- Ruby -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/ruby.png" alt="Ruby" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Ruby</h3>
+                <p class="card-text">
+                  I like Ruby because of the semantics and metaprogramming
+                  concepts. I met Yukihiro 'Matz' Matsumoto, the creator of
+                  Ruby, in RubyConfPH 2017.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title">C#</h3>
-              <p class="card-text">
-                C# is my favorite programming language. I successfully built an
-                Accounting System in 2014, which solved most of the problems the
-                company had.
-              </p>
+          </div>
+          <!-- Ruby on Rails -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/ruby_on_rails.png" alt="Ruby on Rails" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Ruby on Rails</h3>
+                <p class="card-text">
+                  I spent most of my web development in Ruby on Rails.
+                  Personally, it is extensive, and the learning curve is steep.
+                </p>
+              </div>
+              <div class="card-footer skill-level--advanced"></div>
             </div>
-            <div class="card-footer skill-level--advanced"></div>
+          </div>
+          <!-- Postgres -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="tool-logo">
+                <img src="/images/postgresql.png" alt="Postgres" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">PostgreSQL</h3>
+                <p class="card-text">
+                  Most of the Rails application we've been developing uses
+                  PostgreSQL, but I rarely touch them internally. It is stable
+                  and reliable, especially in handling massive data.
+                </p>
+              </div>
+              <div class="card-footer skill-level--intermediate"></div>
+            </div>
           </div>
         </div>
-
-        <!-- WPF -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/wpf.png" alt="WPF" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">WPF</h3>
-              <p class="card-text">
-                My passion coding in C# introduces me to Windows Presentation
-                Foundation which helps me create wonderful user interfaces in
-                Windows-based applications.
-              </p>
-            </div>
-            <div class="card-footer skill-level--advanced"></div>
-          </div>
-        </div>
-
-        <!-- MySQL -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/mysql.png" alt="MySQL" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">MySQL</h3>
-              <p class="card-text">
-                MySQL is my prepared database when creating desktop
-                applications. I find it easy to use and learn, and resources are
-                easily accessible.
-              </p>
-            </div>
-            <div class="card-footer skill-level--advanced"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature grid grid-cols-3">
-        <!-- Ruby -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/ruby.png" alt="Ruby" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Ruby</h3>
-              <p class="card-text">
-                I like Ruby because of the semantics and metaprogramming
-                concepts. I met Yukihiro 'Matz' Matsumoto, the creator of Ruby,
-                in RubyConfPH 2017.
-              </p>
-            </div>
-            <div class="card-footer skill-level--advanced"></div>
-          </div>
-        </div>
-
-        <!-- Ruby on Rails -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/ruby_on_rails.png" alt="Ruby on Rails" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Ruby on Rails</h3>
-              <p class="card-text">
-                I spent most of my web development in Ruby on Rails. Personally,
-                it is extensive, and the learning curve is steep.
-              </p>
-            </div>
-            <div class="card-footer skill-level--advanced"></div>
-          </div>
-        </div>
-
-        <!-- Postgres -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="tool-logo">
-              <img src="/images/postgresql.png" alt="Postgres" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">PostgreSQL</h3>
-              <p class="card-text">
-                Most of the Rails application we've been developing uses
-                PostgreSQL, but I rarely touch them internally. It is stable and
-                reliable, especially in handling massive data.
-              </p>
-            </div>
-            <div class="card-footer skill-level--intermediate"></div>
-          </div>
-        </div>
-      </div>
+      </article>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 })
+    </script>
   </body>
 </html>
