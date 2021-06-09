@@ -29,14 +29,37 @@
   height: 60vh;
 
   &__image {
-    background: url(/images/profile.png);
-    background-position: center;
-    background-size: cover;
+    align-items: center;
+    position: relative;
+    background-clip: padding-box;
+    padding: 2rem;
     border-radius: 150px;
+    border: 2px solid rgba($color-white, 0.2);
     height: 160px;
     width: 160px;
     opacity: 0.9;
-    border: 8px solid $color-purple-light;
+    background: linear-gradient(
+      to bottom right,
+      rgba($color-purple-light, 0.5),
+      rgba($color-purple-dark, 0.5)
+    );
+    box-shadow: 5px 5px 5px rgba($color-black, 0.5);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: 8px;
+      border-radius: 100%;
+      background: url(/images/profile.png);
+      background-position: center;
+      background-size: cover;
+      opacity: 0.9;
+    }
   }
 
   &__info {
