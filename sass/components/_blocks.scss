@@ -1,0 +1,16 @@
+/* Feature */
+.block {
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+}
