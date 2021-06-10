@@ -28,8 +28,12 @@
   }
 }
 
-.text--white {
-  color: #fff;
+body {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #222;
+  background: #ecf0f3;
 }
 
 *,
@@ -42,20 +46,16 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #222;
-  background: #ecf0f3;
-}
-
 h1,
 h2,
 h3 {
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
+}
+
+.text--white {
+  color: #fff;
 }
 
 /* Feature */
@@ -215,10 +215,17 @@ h3 {
   border: 2px solid rgba(179, 141, 255, 0.2);
   border-radius: 100%;
   box-shadow: 5px 5px 5px rgba(144, 101, 229, 0.2), -5px -5px 5px #fff;
+  transition: transform 0.15s;
+}
+.social-media__list-item:hover {
+  transform: scale(1.2);
 }
 .social-media__list-item a {
   color: #b38dff;
   transition: color ease-out 0.15s;
+}
+.social-media__list-item a:active {
+  transform: scale(0.9);
 }
 
 .github {

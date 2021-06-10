@@ -131,10 +131,19 @@
     border: 2px solid rgba($color-purple-light, 0.2);
     border-radius: 100%;
     box-shadow: 5px 5px 5px rgba($color-purple-dark, 0.2), -5px -5px 5px #fff;
+    transition: transform .15s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     a {
       color: $color-purple-light;
       transition: color ease-out 0.15s;
+
+      &:active {
+        transform: scale(.9);
+      }
     }
   }
 }
