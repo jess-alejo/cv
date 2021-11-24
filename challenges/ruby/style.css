@@ -1,0 +1,40 @@
+html {
+  font-size: 1.125rem;
+}
+
+body {
+  margin: 64px auto;
+  max-width: 800px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.dark-mode {
+  background-color: #312244;
+  color: #f5f3f4;
+}
+
+code {
+  border-radius: 4px;
+}
+
+pre code.language-ruby {
+  padding: 0 24px;
+}
+
+section.challenge p,
+section.solution p {
+  margin-top: 48px;
+}
+
+a {
+  color: #f5cb5c;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid;
+}
+
+nav {
+  margin-top: 48px;
+}
