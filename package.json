@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/jess-alejo/cv#readme",
   "dependencies": {
-    "node-sass": "^6.0.0"
+    "node-sass": "^7.0.0"
   }
 }
