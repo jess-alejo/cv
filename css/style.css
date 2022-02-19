@@ -293,3 +293,12 @@ h3 {
 .feature {
   margin: 2rem 0 4rem;
 }
+
+
+a, a:link, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+}
