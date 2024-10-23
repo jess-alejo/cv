@@ -1,0 +1,40 @@
+.tech-stack img {
+  width: auto;
+  height: 25px;
+}
+.tech-stack .list-label {
+  color: #a5b3ce;
+}
+
+.tech-list .icon-item {
+  width: 60px;
+}
+.tech-list .icon-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tag-badge {
+  background: #465981;
+}
+
+.featured-project-list .card {
+  background: none;
+  border: none;
+}
+.featured-project-list .card-title {
+  font-size: 1.125rem;
+}
+.featured-project-list .card-title a {
+  color: #d7dde9;
+  text-decoration: none;
+}
+.featured-project-list .card-title a:hover {
+  color: #629feb;
+}
+.featured-project-list .card-text {
+  color: #a5b3ce;
+}
+.featured-project-list .card-text, .featured-project-list .card-link {
+  font-size: 1rem;
+}
