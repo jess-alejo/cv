@@ -35,6 +35,18 @@
 .featured-project-list .card-text {
   color: #a5b3ce;
 }
-.featured-project-list .card-text, .featured-project-list .card-link {
+.featured-project-list .card-text,
+.featured-project-list .card-link {
   font-size: 1rem;
+}
+
+#profile-image {
+  transition: transform 0.3s ease;
+  height: 160px;
+  width: 160px;
+}
+
+#profile-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
