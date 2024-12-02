@@ -1,9 +1,11 @@
 // Array of profile images
 const images = [
   "profile-0.jpg",
-  "profile-1.png",
+  "profile-1.jpg",
   "profile-2.jpg",
-  "profile-3.png",
+  "profile-3.jpg",
+  "profile-4.jpg",
+  "profile-5.jpg",
 ]
 
 // Initial image index
