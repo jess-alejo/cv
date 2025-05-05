@@ -81,6 +81,9 @@
                   class="resume-profile-pic rounded-circle"
                   src="assets/images/profile-0.jpg"
                   alt="Profile picture of Jess Alejo"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Click to see more photos"
                 />
 
                 <h2 class="resume-name text-uppercase">Jess Alejo</h2>
@@ -787,6 +790,19 @@
       </div>
     </div>
     <footer class="footer text-center py-4"></footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Initialize all tooltips
+      document.addEventListener("DOMContentLoaded", function () {
+        const tooltipTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+        )
+        const tooltipList = [...tooltipTriggerList].map(
+          (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        )
+      })
+    </script>
     <script src="assets/profile-slider.js"></script>
   </body>
 </html>

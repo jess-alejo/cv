@@ -6,6 +6,7 @@ const images = [
   "profile-3.jpg",
   "profile-4.jpg",
   "profile-5.jpg",
+  "profile-6.jpg",
 ]
 
 // Initial image index
