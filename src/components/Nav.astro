@@ -1,0 +1,8 @@
+---
+const pathname = Astro.url.pathname;
+---
+<nav class="site-nav text-center py-2">
+  <a href="/" class:list={['nav-link', { active: pathname === '/' }]}>Resume</a>
+  <a href="/til" class:list={['nav-link', { active: pathname.startsWith('/til') }]}>TIL</a>
+  <a href="/references" class:list={['nav-link', { active: pathname === '/references' }]}>References</a>
+</nav>

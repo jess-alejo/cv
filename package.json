@@ -4,7 +4,9 @@
   "description": "My Personal Page",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   },
   "homepage": "https://github.com/jess-alejo/cv#readme",
   "dependencies": {
+    "@astrojs/mdx": "^5.0.3",
+    "astro": "^6.1.7",
     "node-sass": "^6.0.0"
   }
 }

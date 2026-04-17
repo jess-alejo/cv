@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+
+const categories = (await getCollection('references'))
+  .sort((a, b) => a.data.category.localeCompare(b.data.category));
+---
+<BaseLayout title="References - JEA">
+  <div class="container-fluid">
+    <div class="main-content-wrapper py-lg-3">
+      <div class="container-fluid">
+        <Nav />
+        <div class="resume-wrapper mx-auto rounded-2">
+          <div class="resume-header px-4 px-lg-5 text-center">
+            <h2 class="resume-name text-uppercase">References</h2>
+            <div class="resume-role-title">Tutorials, docs, and resources I find useful</div>
+          </div>
+          <div class="resume-body p-4 p-lg-5">
+            {categories.length === 0 ? (
+              <p class="text-center" style="color: var(--bs-secondary-color, #a5b3ce)">No references yet.</p>
+            ) : (
+              <div class="row g-4">
+                {categories.map((cat) => (
+                  <div class="col-12 col-lg-6">
+                    <div class="ref-category">
+                      <h3 class="resume-section-heading text-uppercase py-2">
+                        <i class={`resume-section-heading-icon bi ${cat.data.icon} me-2`}></i>
+                        {cat.data.category}
+                      </h3>
+                      <ul class="list-unstyled">
+                        {cat.data.links.map((link) => (
+                          <li class="mb-3">
+                            <a href={link.url} target="_blank" class="d-block fw-semibold">
+                              <i class="bi bi-arrow-up-right-square me-1"></i>{link.title}
+                            </a>
+                            {link.description && (
+                              <div class="small mt-1" style="color: #a5b3ce">{link.description}</div>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

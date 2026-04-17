@@ -1,0 +1,21 @@
+{
+  "category": "Ruby on Rails",
+  "icon": "bi-gem",
+  "links": [
+    {
+      "title": "Rails Guides",
+      "url": "https://guides.rubyonrails.org/",
+      "description": "Official documentation covering every major Rails feature"
+    },
+    {
+      "title": "Hotwire",
+      "url": "https://hotwired.dev/",
+      "description": "Turbo + Stimulus — Rails' default approach to modern frontend interactivity"
+    },
+    {
+      "title": "RubyGems",
+      "url": "https://rubygems.org/",
+      "description": "Find and explore Ruby gems"
+    }
+  ]
+}

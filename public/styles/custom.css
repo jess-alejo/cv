@@ -1,0 +1,75 @@
+.tech-stack img {
+  width: auto;
+  height: 25px;
+}
+.tech-stack .list-label {
+  color: #a5b3ce;
+}
+
+.tech-list .icon-item {
+  width: 60px;
+}
+.tech-list .icon-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tag-badge {
+  background: #465981;
+}
+
+.featured-project-list .card {
+  background: none;
+  border: none;
+}
+.featured-project-list .card-title {
+  font-size: 1.125rem;
+}
+.featured-project-list .card-title a {
+  color: #d7dde9;
+  text-decoration: none;
+}
+.featured-project-list .card-title a:hover {
+  color: #629feb;
+}
+.featured-project-list .card-text {
+  color: #a5b3ce;
+}
+.featured-project-list .card-text,
+.featured-project-list .card-link {
+  font-size: 1rem;
+}
+
+#profile-image {
+  transition: transform 0.3s ease;
+  height: 160px;
+  width: 160px;
+}
+
+#profile-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.site-nav {
+  padding: 0.5rem 0;
+}
+.site-nav .nav-link {
+  display: inline-block;
+  color: #a5b3ce;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.site-nav .nav-link:hover {
+  color: #d7dde9;
+  background: rgba(255, 255, 255, 0.05);
+}
+.site-nav .nav-link.active {
+  color: #f97066;
+}
