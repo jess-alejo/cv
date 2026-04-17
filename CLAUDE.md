@@ -36,3 +36,7 @@ To preview locally, open `index.html` directly or use any static file server. De
 - `assets/images/profiles/` — 7 profile photos (`profile-0.jpg` through `profile-6.jpg`)
 - `assets/images/tech-icons/` — 17 SVG technology icons
 - `CNAME` — GitHub Pages custom domain config
+
+## Git Conventions
+
+- Do not add `Co-Authored-By` trailers to commit messages (e.g. `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`)
