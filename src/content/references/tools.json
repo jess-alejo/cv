@@ -1,0 +1,21 @@
+{
+  "category": "Tools & DevOps",
+  "icon": "bi-tools",
+  "links": [
+    {
+      "title": "Docker Docs",
+      "url": "https://docs.docker.com/",
+      "description": "Official Docker documentation"
+    },
+    {
+      "title": "Kamal",
+      "url": "https://kamal-deploy.org/",
+      "description": "Deploy web apps anywhere using Docker — replaces Heroku-style deploys"
+    },
+    {
+      "title": "Git - Reference",
+      "url": "https://git-scm.com/docs",
+      "description": "Complete Git command reference"
+    }
+  ]
+}
