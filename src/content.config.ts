@@ -25,4 +25,12 @@ const references = defineCollection({
   }),
 });
 
-export const collections = { til, references };
+const notes = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/notes' }),
+  schema: z.object({
+    title: z.string(),
+    category: z.array(z.string()),
+  }),
+});
+
+export const collections = { til, references, notes };

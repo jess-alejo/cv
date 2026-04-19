@@ -1,0 +1,74 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+<BaseLayout {title}>
+  <div class="container-fluid">
+    <div class="main-content-wrapper py-lg-3">
+      <div class="container-fluid">
+
+        <div class="top-bar text-center position-relative">
+          <div class="top-bar-inner">
+            <ul class="social-list list-inline mx-auto">
+              <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                <a href="https://x.com/JEAlejo" target="_blank">
+                  <i class="bi bi-twitter-x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                <a href="https://github.com/jess-alejo" target="_blank">
+                  <i class="bi bi-github fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                <a href="https://www.linkedin.com/in/jess-alejo" target="_blank">
+                  <i class="bi bi-linkedin fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                <a href="https://www.facebook.com/jess.programmer" target="_blank">
+                  <i class="bi bi-facebook fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="site-nav text-center py-2">
+          <a href="/" class:list={['nav-link', { active: pathname === '/' }]}>Resume</a>
+          <a href="/til" class:list={['nav-link', { active: pathname.startsWith('/til') }]}>TIL</a>
+          <a href="/references" class:list={['nav-link', { active: pathname === '/references' }]}>References</a>
+          <a href="/notes" class:list={['nav-link', { active: pathname.startsWith('/notes') }]}>Notes</a>
+        </nav>
+
+        <div class="resume-wrapper mx-auto rounded-2">
+          <div class="resume-header px-4 px-lg-5">
+            <div class="resume-profile-holder text-center">
+              <img
+                id="profile-image"
+                class="resume-profile-pic rounded-circle"
+                src="/assets/images/profile-0.jpg"
+                alt="Profile picture of Jess Alejo"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Click to see more photos"
+              />
+              <h2 class="resume-name text-uppercase">Jess Alejo</h2>
+              <div class="resume-role-title text-uppercase">Software Developer</div>
+            </div>
+          </div>
+
+          <div class="resume-body p-4 p-lg-5">
+            <slot />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</BaseLayout>

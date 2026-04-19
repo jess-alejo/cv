@@ -5,4 +5,5 @@ const pathname = Astro.url.pathname;
   <a href="/" class:list={['nav-link', { active: pathname === '/' }]}>Resume</a>
   <a href="/til" class:list={['nav-link', { active: pathname.startsWith('/til') }]}>TIL</a>
   <a href="/references" class:list={['nav-link', { active: pathname === '/references' }]}>References</a>
+  <a href="/notes" class:list={['nav-link', { active: pathname.startsWith('/notes') }]}>Notes</a>
 </nav>

@@ -1,61 +1,45 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Nav from '../components/Nav.astro';
+import PageLayout from '../layouts/PageLayout.astro';
 
 const entries = (await getCollection('til'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
-<BaseLayout title="TIL - JEA">
-  <div class="container-fluid">
-    <div class="main-content-wrapper py-lg-3">
-      <div class="container-fluid">
-        <Nav />
-        <div class="resume-wrapper mx-auto rounded-2">
-          <div class="resume-header px-4 px-lg-5 text-center">
-            <h2 class="resume-name text-uppercase">Today I Learned</h2>
-            <div class="resume-role-title">Software development notes &amp; discoveries</div>
-          </div>
-          <div class="resume-body p-4 p-lg-5">
-            {entries.length === 0 ? (
-              <p class="text-center" style="color: var(--bs-secondary-color, #a5b3ce)">No entries yet.</p>
-            ) : (
-              <div class="til-list">
-                {entries.map(async (entry) => {
-                  const { Content } = await render(entry);
-                  return (
-                    <article class="til-entry mb-5">
-                      <div class="d-flex align-items-baseline gap-3 mb-1 flex-wrap">
-                        <time class="til-date resume-position-time" datetime={entry.data.date.toISOString()}>
-                          {entry.data.date.toLocaleDateString('en-PH', { year: 'numeric', month: 'short', day: 'numeric' })}
-                        </time>
-                        <ul class="list-inline mb-0">
-                          {entry.data.tags.map(tag => (
-                            <li class="list-inline-item">
-                              <span class="badge tag-badge">{tag}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <h3 class="resume-position-title mb-2">{entry.data.title}</h3>
-                      {entry.data.source && (
-                        <div class="mb-2">
-                          <a href={entry.data.source} target="_blank" class="small">
-                            <i class="bi bi-link-45deg me-1"></i>{entry.data.source}
-                          </a>
-                        </div>
-                      )}
-                      <div class="resume-summary-desc">
-                        <Content />
-                      </div>
-                    </article>
-                  );
-                })}
+<PageLayout title="TIL - JEA">
+  {entries.length === 0 ? (
+    <p class="text-center" style="color: var(--bs-secondary-color, #a5b3ce)">No entries yet.</p>
+  ) : (
+    <div class="til-list">
+      {entries.map(async (entry) => {
+        const { Content } = await render(entry);
+        return (
+          <article class="til-entry mb-5">
+            <div class="d-flex align-items-baseline gap-3 mb-1 flex-wrap">
+              <time class="til-date resume-position-time" datetime={entry.data.date.toISOString()}>
+                {entry.data.date.toLocaleDateString('en-PH', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </time>
+              <ul class="list-inline mb-0">
+                {entry.data.tags.map(tag => (
+                  <li class="list-inline-item">
+                    <span class="badge tag-badge">{tag}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <h3 class="resume-position-title mb-2">{entry.data.title}</h3>
+            {entry.data.source && (
+              <div class="mb-2">
+                <a href={entry.data.source} target="_blank" class="small">
+                  <i class="bi bi-link-45deg me-1"></i>{entry.data.source}
+                </a>
               </div>
             )}
-          </div>
-        </div>
-      </div>
+            <div class="resume-summary-desc">
+              <Content />
+            </div>
+          </article>
+        );
+      })}
     </div>
-  </div>
-</BaseLayout>
+  )}
+</PageLayout>
